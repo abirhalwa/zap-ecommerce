@@ -1,0 +1,1260 @@
+/* --------------setup code starts here -------------------*/
+
+html {
+    line-height: 1.15;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+}
+
+body {
+    margin: 0
+}
+
+article, aside, footer, header, nav, section {
+    display: block
+}
+
+h1 {
+    font-size: 2em;
+    margin: .67em 0
+}
+
+figcaption, figure, main {
+    display: block
+}
+
+figure {
+    margin: 1em 40px
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible
+}
+
+pre {
+    font-family: monospace, monospace;
+    font-size: 1em
+}
+
+a {
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects
+}
+
+abbr[title] {
+    border-bottom: none;
+    text-decoration: underline;
+    text-decoration: underline dotted
+}
+
+b, strong {
+    font-weight: inherit
+}
+
+b, strong {
+    font-weight: bolder
+}
+
+code, kbd, samp {
+    font-family: monospace, monospace;
+    font-size: 1em
+}
+
+dfn {
+    font-style: italic
+}
+
+mark {
+    background-color: #ff0;
+    color: #000
+}
+
+small {
+    font-size: 80%
+}
+
+sub, sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline
+}
+
+sub {
+    bottom: -.25em
+}
+
+sup {
+    top: -.5em
+}
+
+audio, video {
+    display: inline-block
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0
+}
+
+img {
+    border-style: none
+}
+
+svg:not(:root) {
+    overflow: hidden
+}
+
+button, input, optgroup, select, textarea {
+    font-family: sans-serif;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0
+}
+
+button, input {
+    overflow: visible
+}
+
+button, select {
+    text-transform: none
+}
+
+button, html [type=button], [type=reset], [type=submit] {
+    -webkit-appearance: button
+}
+
+button::-moz-focus-inner, [type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner {
+    border-style: none;
+    padding: 0
+}
+
+button:-moz-focusring, [type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring {
+    outline: 1px dotted ButtonText
+}
+
+fieldset {
+    padding: .35em .75em .625em
+}
+
+legend {
+    box-sizing: border-box;
+    color: inherit;
+    display: table;
+    max-width: 100%;
+    padding: 0;
+    white-space: normal
+}
+
+progress {
+    display: inline-block;
+    vertical-align: baseline
+}
+
+textarea {
+    overflow: auto
+}
+
+[type=checkbox], [type=radio] {
+    box-sizing: border-box;
+    padding: 0
+}
+
+[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {
+    height: auto
+}
+
+[type=search] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px
+}
+
+[type=search]::-webkit-search-cancel-button, [type=search]::-webkit-search-decoration {
+    -webkit-appearance: none
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit
+}
+
+details, menu {
+    display: block
+}
+
+summary {
+    display: list-item
+}
+
+canvas {
+    display: inline-block
+}
+
+template {
+    display: none
+}
+
+[hidden] {
+    display: none
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: '';
+    clear: both;
+    height: 0;
+}
+
+html {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+/* ------------------------------------------------------*/
+
+/* ------------------ general styles ------------------ */
+
+/* set the padding and margin for some elements to zero */
+
+body, p, ul, h1, h2, h3, h4, h5, h6, button {
+    margin: 0;
+    padding: 0;
+}
+
+/* set the font size for the base element */
+
+html {
+    font-size: 62.5%;
+}
+
+/* set the font properties for the body */
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #141414;
+    text-transform: uppercase;
+}
+
+/* set the style for the wrapper class */
+
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* to style all images on the page */
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* styling any unordered list and remove the bullets from its items */
+
+ul {
+    list-style: none;
+}
+
+/* to style all the links in the page */
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 600;
+    /* to allow links to accept padding */
+    display: inline-block;
+}
+
+/* to style all the paragraphs*/
+
+p {
+    text-transform: none;
+}
+
+/* to style all the headings */
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+}
+
+/* to style all the buttons */
+
+button {
+    text-transform: inherit;
+    font: inherit;
+    color: inherit;
+    font-weight: 600;
+    border-style: none;
+    cursor: pointer;
+}
+
+/* --------------------------------------------------- */
+
+/* ------------------ header styles ------------------ */
+
+/* to syle the header */
+
+header {
+    min-height: 100vh;
+    background-image: url('assets/main-image-1.jpeg');
+    background-size: cover;
+    background-position: 60% 0;
+    color: #FFFFFF;
+    padding-top: 4%;
+}
+
+/* to style the navigation bar in the header */
+
+/* to style the list in th latest section */
+
+/* to style the top and the bottom parts of the footer */
+
+/* to style the list of social media icons in the footer */
+
+/* to style the list in the fashionNews section */
+
+/* to style the newArrivalProducts list */
+
+/* to style the instagram list */
+
+header nav, .latest ul, footer>*, .footerBottom ul, .fashionNews ul, .newArrivalProducts, .instagram ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* to style the logo link  */
+
+.logo {
+    flex-grow: 2;
+}
+
+.hamburgerIcon {
+    /* to style the hamburger icon in the header */
+    visibility: hidden;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+label[for="toggle"] {
+    /* to style the toogle label of the hamburger icon */
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 10;
+    width: 40px;
+    height: 40px;
+    background-color: #d8d8d6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+label[for="sub"] {
+    width: 100%;
+    font-weight: 600;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    /*hide the input, we don't need to see it */
+    display: none;
+}
+
+/* to style the main menu and the icons lists in the top of the header */
+
+/* to style the list in the navigation bar in the newArrival section */
+
+.mainMenu div, .iconsList, .newArrival nav ul {
+    display: flex;
+    align-items: center;
+}
+
+.iconsList, .newArrival nav ul {
+    flex-wrap: wrap;
+}
+
+/* to style the mainMenu list in the header */
+
+.mainMenu {
+    margin: 0 5vw;
+    flex-grow: 1;
+    width: auto;
+    align-self: center;
+}
+
+/* to style the links in the header */
+
+header a, label[for="sub"] {
+    padding: 10px 0;
+    border-bottom: 3px solid transparent;
+}
+
+/* to style the list items in the mainMenu and icons lists*/
+
+/* to style the list items in the newArrival section nav */
+
+/* to style the list items in the bottom of the footer */
+
+header nav>ul>li, .newArrival nav li, .footerBottom li, ul.mainMenu div>li {
+    padding-left: 2vw;
+}
+
+/* to add to the style of the list items in the mainMenu */
+
+/* to style the links in the instagram and latest sections */
+
+/* to style the imgContainer in the newArrivalProducts lits */
+
+/* to style imgDiv1 and imgDiv2 in the fashionNews section */
+
+.mainMenu div>li, .instagram a, .latest a, .imgContainer, .imgDiv1, .imgDiv2 {
+    position: relative;
+}
+
+/* to style the links of the main menu in hover and focus states  */
+
+.mainMenu div>li>a:hover, .mainMenu div>li>a:focus {
+    border-color: #eeb013;
+}
+
+/* to style the sub menu when hover or fucus on a mainMenu list item  */
+
+.mainMenu div>li:hover .subMenu, .mainMenu div>li:focus-within .subMenu {
+    display: block;
+}
+
+/* to hide the right arrow icon */
+
+i[class="fas fa-chevron-right"] {
+    display: none;
+}
+
+/* to style the sub menu */
+
+.subMenu {
+    background-color: rgba(98, 98, 98, 0.6);
+    display: none;
+    position: absolute;
+    left: 2vw;
+    width: calc(100% - 2vw);
+    text-align: center;
+}
+
+/* to style the links in the dropdown list */
+
+/* to style the images and in the instagram and fashionNews sections */
+
+.subMenu a, .instagram img, .fashionNews img {
+    width: 100%;
+}
+
+/* to style the links in the subMenu in hover and focus states */
+
+.subMenu a:hover, .subMenu a:focus {
+    background-color: #e4e4e4;
+    color: #141414;
+}
+
+/* to style the span that contains the name in the fashionNews section*/
+
+/* to style  the button in the bottomFull section in hover and focus states*/
+
+/* to style all the links in hover and focus states */
+
+.fashionNews p:first-of-type span, .bottomFull button:hover, .bottomFull button:focus, a:hover, a:focus, label[for="sub"]:hover, label[for="sub"]:focus {
+    color: #eeb013;
+}
+
+/* to style the bottom of the header */
+
+.headerBottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+
+/* to style heading 1 in the page  */
+
+h1 {
+    font-size: calc(1.6vw + 1.6rem);
+    border: 4px solid #FFFFFF;
+    padding: 1% 4%;
+    margin-bottom: 5%;
+}
+
+/* to style all h5 elements */
+
+h5 {
+    font-size: calc(0.2vw + 1.6rem);
+    margin-bottom: 1%;
+}
+
+/* to style the button in the header */
+
+header button {
+    background-color: Transparent;
+    border: 2px solid #FFFFFF;
+    padding: 1% 2%;
+    margin-bottom: 5%;
+}
+
+/* to style the header button in hover and focus states */
+
+/* to style heading 3 in the latest section in hover and focus states */
+
+/* to style the button in fashionNews section in hover and focus states */
+
+header button:hover, header button:focus, .latest a:hover h3, .latest a:focus h3, .fashionNews button:hover, .fashionNews button:focus {
+    border-color: #eeb013;
+    color: #eeb013;
+}
+
+/* -------------------------------------------------------------- */
+
+/*---------------------------------- main styles----------------- */
+
+/* to style the main  */
+
+main {
+    text-align: center;
+}
+
+/* to style all the sections */
+
+section {
+    padding-bottom: 2%;
+}
+
+/* to style all the direct children of any section */
+
+/* to style all the direct children of the NewArrivalProducts list items */
+
+/* to style all the direct children of the div inside the full section */
+
+/* to style all the direct children of the fashionNews list items */
+
+/* to style all the direct children of the features list items */
+
+/* to style all the direct children of the div inside the bottomFull section */
+
+/* to style the instagram list items*/
+
+section>*, .newArrivalProducts li>*, .full div.wrapper>*, .fashionNews li>*, .features li>*, .bottomFull div>*, .instagram li {
+    margin-bottom: 5%;
+}
+
+/* -------------------------------------------------------------- */
+
+/* ------------------- latest section styles --------------------- */
+
+/* to style the latest section */
+
+.latest {
+    color: #ffffff;
+    margin-top: 5%;
+}
+
+/* to style the list items in the latest and fashionNews sections*/
+
+.latest li, .fashionNews li {
+    width: calc(100% / 3 - 2%);
+}
+
+/* to style the links in the latest section */
+
+/* to style the overlay div in the instagram section */
+
+/* to style the list in the fullMiddle section */
+
+.latest a, .overlay, .fullMiddle ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* to style h3, h5 and h1 in the latest section */
+
+h3, .latest h5, .latest h1 {
+    position: absolute;
+}
+
+/* to style all headings 3 */
+
+h3 {
+    font-size: calc(0.9vw + 1.6rem);
+    padding: 3%;
+    border: 3px solid white;
+}
+
+/* to style h1 in the latest section */
+
+.latest h1 {
+    border: none;
+    top: 50%;
+}
+
+/* ------------------------------------------------------------------ */
+
+/* -------------------newArrival section styles-------------------- */
+
+/* to add to the style of the newArrival list */
+
+.newArrival nav ul {
+    justify-content: center;
+}
+
+/* to style all the headings 4 */
+
+h4 {
+    font-size: calc(0.6vw + 1.6rem);
+    border: 1px solid #e4e4e4;
+    display: inline-block;
+    padding: 2% 4%;
+}
+
+/* to add to the style of the products list in the new arrival section  */
+
+/* to style the list of images in the instagram section in the footer */
+
+.newArrivalProducts, .instagram ul {
+    flex-wrap: wrap;
+}
+
+/* to style the newArrivalProducts list item */
+
+.newArrivalProducts li {
+    width: calc(100% / 4 - 2%);
+    margin-bottom: 5%;
+    text-align: left;
+}
+
+/* to style the span (SALES, NEW) in the imgContainer */
+
+.imgContainer span {
+    position: absolute;
+    border: 2px solid #141414;
+    padding: 3% 2%;
+    font-weight: 600;
+    top: 3%;
+    left: 3%;
+}
+
+/* to style the images in the newArrivalProcusts list */
+
+.newArrivalProducts img {
+    width: 100%;
+}
+
+/* to style the links in the newArrival section to have the  diamond icon  */
+
+.newArrival nav a::after {
+    content: "♦";
+    color: #eeb013;
+    display: block;
+    opacity: 0;
+}
+
+/* to style the navbar links in the newArrival section in hover and focus states*/
+
+.newArrival nav a:hover::after, .newArrival nav a:focus::after {
+    opacity: 1;
+}
+
+/* to style the images in the newArrival section in hover and focus states  */
+
+/* to style the instagram pictures in hover and focus states*/
+
+.imgContainer:hover .addToCart, .imgContainer:focus-within .addToCart, .instagram li:hover .overlay, .instagram li:focus-within .overlay {
+    opacity: 1;
+}
+
+/* to style the paragraphs in the newArrivalProducts list */
+
+.newArrivalProducts p {
+    font-style: italic;
+    font-weight: 600;
+}
+
+/* to style the text that is crossed */
+
+.cross {
+    text-decoration: line-through;
+    font-weight: 400;
+}
+
+/* to style the addToCart button */
+
+.addToCart {
+    background-color: #eeb013;
+    position: absolute;
+    opacity: 0;
+    top: 80%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+/*-----------------------------------------------------------------------  */
+
+/* ----------------------full section styles------------------------ */
+
+/* to style the full section*/
+
+.full {
+    text-align: left;
+    margin-bottom: 5%;
+}
+
+/* to style the two main divs in th full section */
+
+/* to style the bottomFull section */
+
+.full>div, .bottomFull {
+    background-size: cover;
+    background-position: 50% 0;
+    margin-bottom: 0;
+}
+
+/* to style the first div in the full section */
+
+.full>div:nth-child(1) {
+    background-image: url("./assets/main-image-2.jpeg");
+}
+
+/* to style the second div in the full section */
+
+.full>div:nth-child(2) {
+    background-image: url("./assets/main-image-3.jpeg");
+}
+
+/* to style the text div in the first div of the full section */
+
+.full>div:nth-child(1)>div {
+    padding: 10% 0 10% 40%;
+}
+
+/* to style the text div in the second div of the full section */
+
+/* to style the text div in the bottomFull section */
+
+.full>div:nth-child(2)>div, .bottomFull div {
+    padding: 10% 40% 5% 0;
+}
+
+/* to style all headings 2 */
+
+h2 {
+    font-size: calc(1.2vw + 1.6rem);
+}
+
+/* to style the paragraphs in the full section(first paragraph only), bottomFull, testimonial and features sections*/
+
+.full p:first-of-type, .bottomFull p, .testimonial p:first-of-type, .features p {
+    font-family: 'Crimson Text', serif;
+    font-style: italic;
+}
+
+/* to add to the style of the first paragraph in the full section */
+
+.full p:first-of-type {
+    text-transform: capitalize;
+}
+
+/* to style the second paragraph in the full section  */
+
+.full p:nth-of-type(2) {
+    color: #eeb013;
+    font-weight: 600;
+    font-size: calc(1.3vw + 1.6rem);
+}
+
+/* to style the buttons in the full and bottomFull sections */
+
+.full button, .bottomFull button {
+    width: 200px;
+    height: 50px;
+    background-color: #eeb013;
+}
+
+/* to style the buttons in the full section in hover and focus states */
+
+.full button:hover, .full button:focus {
+    background-color: #d39c10;
+}
+
+/* ------------------------------------------------------------------ */
+
+/* ---------------------- features section-------------------------- */
+
+/* to style the icons in the features section */
+
+.features i {
+    border: 2px solid #141414;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+/* ----------------------------------------------------------------- */
+
+/* -------------------fashionNews section styles-------------------- */
+
+/* to style the fashionNews list */
+
+.fashionNews ul {
+    text-transform: none;
+    text-align: left;
+}
+
+/* to style the container of the subBar  */
+
+.bar {
+    height: 50px;
+    display: flex;
+    align-items: flex-end;
+}
+
+/* to style the previous and next links on the image */
+
+.imgDiv1 a {
+    position: absolute;
+    top: calc(50% - 15px);
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #e4e4e4;
+}
+
+/* to style the previous link */
+
+.imgDiv1 a:nth-of-type(1) {
+    left: 5%;
+}
+
+/* to style the next link */
+
+.imgDiv1 a:nth-of-type(2) {
+    right: 5%;
+}
+
+/* to style the play link on the image */
+
+.imgDiv2 a {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    color: #e4e4e4;
+    font-size: 5rem;
+    ;
+}
+
+/* to style the direct children in the subBar */
+
+.subBar>* {
+    margin-right: 2%;
+}
+
+/* to style the subBar */
+
+.subBar {
+    border-top: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+    width: 100%;
+    padding: 2% 0;
+}
+
+/* to style the time elements in the fashionNews section */
+
+time {
+    padding: 2%;
+    background-color: #eeb013;
+    color: #ffffff;
+    width: 60px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 2rem;
+    font-family: 'Crimson Text', serif;
+    text-transform: uppercase;
+}
+
+/* to style the read more button in the fashionNews section */
+
+.fashionNews button {
+    width: 150px;
+    height: 50px;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 1px solid #e4e4e4;
+}
+
+/* to style the first paragraph in the fashion news section */
+
+.fashionNews p:first-of-type {
+    font-weight: 600;
+}
+
+/* ----------------------------------------------------------------- */
+
+/*------------------------ testimonial section ---------------------------*/
+
+/* to style the testimonial section */
+
+.testimonial {
+    width: 60%;
+}
+
+/* to style the second paragraph in the testimonial section */
+
+.testimonial p:nth-of-type(2) {
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 2%;
+}
+
+/* to style the third paragraph in the testimonial section */
+
+.testimonial p:nth-of-type(3) {
+    font-family: 'Crimson Text', serif;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+/* to style the radio button  */
+
+input[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    background-color: #e4e4e4;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* to style radio button when checked */
+
+input[type="radio"]:checked {
+    background-color: #eeb013;
+}
+
+/*-----------------------------------------------------------------------  */
+
+/* ----------------------- ourbrands section styles --------------------- */
+
+/* to style the lists in ourBrands and features sections */
+
+.ourBrands ul, .features ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* to style all the list items in ourBrands and features sections  */
+
+.ourBrands li, .features li {
+    padding-left: 4vw;
+}
+
+/*-----------------------------------------------------------------------  */
+
+/* ----------------------bottom full section styles--------------------------- */
+
+/* to style the bottom full section */
+
+.bottomFull {
+    background-image: url('./assets/main-image-4.jpeg');
+}
+
+/* to add to the button style in the bottom full section */
+
+.bottomFull button {
+    background-color: #141414;
+    color: #ffffff;
+}
+
+/*-----------------------------------------------------------------------  */
+
+/* -------------------------- footer styles-------------------------------- */
+
+/* to style the footer */
+
+footer {
+    background-color: #141414;
+    color: #626262;
+    padding: 3% 0 1% 0;
+}
+
+/* to style all the elements inside the containers at the top of the footer */
+
+/* to style the links list items in the links section */
+
+.footerTop div>*, .links li {
+    margin-bottom: 10%;
+}
+
+/* to style all headings 6  in the footerTop  */
+
+.footerTop h6 {
+    color: #e4e4e4;
+    font-size: calc(0.1vw + 1.3rem);
+    margin-bottom: 3%;
+}
+
+/* to style all the divs inside the footerTop except the last one */
+
+.footerTop div:not(:last-child) {
+    border-right: 1px solid #626262;
+    padding-right: 2%;
+}
+
+/* to style all the divs in the footertop except the first one */
+
+/* to style the list items in the instagram list */
+
+.footerTop div:not(:first-child), .instagram li {
+    padding-left: 2%;
+}
+
+/* to style the address section in the footer */
+
+.address {
+    width: 32%;
+}
+
+/* to style heading 6 in the address part of the footer*/
+
+.address h6 {
+    color: #eeb013;
+    margin-bottom: 10%;
+}
+
+/* to style the div that contains the small yellow line below heading 6 */
+
+.line {
+    width: 20px;
+    border-bottom: 2px solid #eeb013;
+}
+
+/* to style the links section in the top of the footer */
+
+.links {
+    width: 20%;
+}
+
+/* to style the twitter section in the top of the footer */
+
+.twitter {
+    width: 25%;
+}
+
+/* to style the span and the icon in the twitter section in the footer */
+
+.twitter span, .twitter i {
+    color: #3B3B3B;
+    text-transform: none;
+}
+
+/* to style the instagram section in the footer */
+
+.instagram {
+    width: 23%;
+}
+
+/* to style the overlay div which appears when hover on the instagram items*/
+
+.overlay {
+    position: absolute;
+    opacity: 0;
+    background-color: rgba(238, 176, 19, 0.5);
+    color: #e4e4e4;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+/* to style the bottom of the footer */
+
+.footerBottom {
+    margin-top: 3%;
+}
+
+/* ----------------------------------------------------------- */
+
+/* media queries */
+
+/* media query to show the hamburger icon */
+
+@media(max-width: 1074px) {
+    .hamburgerIcon {
+        visibility: visible;
+        /* to show the hamburger icon */
+    }
+    #toggle:checked~.mainMenu {
+        right: 0;
+        /*when the checkbox is checked, show the menu*/
+    }
+    #sub:checked~.subMenu {
+        display: block;
+        position: static;
+        /*when the checkbox is checked, show the menu*/
+    }
+    label[for="sub"]:hover, label[for="sub"]:focus {
+        border-color: #eeb013;
+    }
+    .mainMenu div>li:hover .subMenu, .mainMenu div>li:focus-within .subMenu {
+        display: none;
+    }
+    .mainMenu div {
+        width: 100%;
+        background: #141414;
+        flex-direction: column;
+    }
+    .mainMenu {
+        margin: 0;
+        position: fixed;
+        z-index: 9;
+        width: 100%;
+        right: -100%;
+        /* to hide the ul from the screen */
+        top: 0;
+        transition: all 0.4s;
+        /* justify-content: space-evenly; */
+        height: 95vh;
+        max-height: 503px;
+        overflow-y: scroll;
+    }
+    .mainMenu li {
+        padding-left: 0;
+        width: 100%;
+        text-align: center;
+    }
+    .mainMenu li:first-child {
+        margin-top: 15px;
+    }
+    .mainMenu li:not(:last-child) {
+        margin-bottom: 15px;
+    }
+    .mainMenu li a {
+        width: 100%;
+    }
+    .subMenu {
+        width: 100%;
+        position: static;
+    }
+}
+
+/* media query for tablets */
+
+@media(max-width: 768px) {
+    html {
+        font-size: 52.5%;
+    }
+    /* .mainMenu,  */
+    .fashionNews ul {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .latest li, .fashionNews li {
+        width: 100%;
+        margin-bottom: 5%;
+    }
+    .latest ul {
+        flex-direction: column;
+    }
+    .newArrivalProducts li {
+        width: calc(100% / 2 - 2%);
+    }
+    .footerTop {
+        flex-wrap: wrap;
+    }
+    .footerTop>div {
+        width: 50%;
+        margin-top: 5%;
+    }
+    .footerTop>div:nth-child(2) {
+        border-right-color: transparent;
+    }
+    .instagram li {
+        width: calc(100% / 3 - 3%);
+    }
+}
+
+/* media query for phones */
+
+@media (max-width: 480px) {
+    html {
+        font-size: 42.5%;
+    }
+    .newArrivalProducts li, .footerTop>div {
+        width: 100%;
+    }
+    .footerTop>div:not(:last-child) {
+        border-bottom: 1px solid #626262;
+        padding-bottom: 5%;
+        ;
+        border-right-style: none;
+    }
+    .footerBottom, .features ul {
+        flex-direction: column;
+        flex-basis: 100%;
+    }
+    .footerBottom nav {
+        order: -1;
+        padding-bottom: 5%;
+    }
+    .footerBottom ul {
+        justify-content: flex-start;
+    }
+    .full button, .bottomFull button, .fashionNews button {
+        width: 70px;
+        height: 40px;
+    }
+    .full, .ourBrands ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .ourBrands li, .features li {
+        padding-bottom: 5%;
+        padding-left: 0;
+    }
+}
